@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multimdedia HTML5</title>
+</head>
+<body>
+    <h1>HTML5 Multimedia Minggu 3</h1>
+    <h2>Raditya Abdul Afeef</h2>
+    <h2>A11.2022.14203</h2>
+    <video width="800" id="myVideo">
+        <source src="vid.mp4" type="video/mp4">
+    </video><br>
+    <button onclick="playVid()">Play</button>
+    <button onclick="pauseVid()">Pause</button>
+    <button onclick="durationVid()">Duration</button>
+    <button onclick="enableControls()">Enable Controls</button>
+    <button onclick="disableControls()">Disable</button>
+    <button onclick="setPlaySpeed()">Slow Motion</button>
+    <button onclick="setPlaySpeed2()">2X</button>
+    <button onclick="setPlaySpeed3()">Normal</button>
+    <button onclick="checkControls()">Check Controls</button><br>
+</body>
+<script>
+var vid = document.getElementById("myVideo");
+
+function setPlaySpeed() { 
+  vid.playbackRate = 0.5;
+}
+
+function setPlaySpeed3() { 
+  vid.playbackRate = 1.0;
+}
+
+function setPlaySpeed2() { 
+  vid.playbackRate = 2.0;
+}
+
+function disableControls() {
+    vid.controls = false
+    vid.load();
+}
+
+function enableControls() {
+    vid.controls = true
+    vid.load();
+}
+
+function durationVid() {
+  alert(vid.duration);
+}
+
+function playVid() {
+    vid.play();
+}
+
+function pauseVid() {
+    vid.pause();
+}
+ 
+function checkControls() { 
+  alert(vid.controls);
+}
+
+</script>
+</html>
