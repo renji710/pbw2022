@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form HTML 5</title>
+    </head>
+    <body>
+        <div align="center">
+            <h1>Element Form HTML 5</h1>
+            <form name="fmhs" action="proses.php" method="post">
+                <table>
+                        <tr>
+                            <td>Nim</td>
+                            <td><input type="number" name="fnim" required></td>
+                        </tr>
+                        <tr>
+                            <td>Nama</td>
+                            <td><input type="text" name="fnama" required></td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td><input type="text" type="number" name="falamat" required></td>
+                        </tr>
+                        <tr>
+                            <td>Tgl Lahir</td>
+                            <td><input type="date" name="ftgllhr" required></td>
+                        </tr>
+                        <tr>
+                            <td>Program Studi</td>
+                            <td>
+                                <select name="fprodi">
+                                    <option>Pilih Satu</option>
+                                    <option value="A11">S1 - TI</option>
+                                    <option value="A13">S1 - SI</option>
+                                    <option value="A13">S1 - DKV</option>
+                                    <option value="A13">S1 - Ekonomi</option>
+                                    <option value="A13">S1 - Akuntansi</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hobby</td>
+                            <td>
+                                <input type="checkbox" name="fhobby1" value="11">
+                                <label for="fhobby1">Bermain Game</label><br>
+                                <input type="checkbox" name="fhobby2" value="12">
+                                <label for="fhobby2">Belajar</label><br>
+                                <input type="checkbox" name="fhobby3" value="13">
+                                <label for="fhobby3">Sepak Bola</label><br>
+                                <input type="checkbox" name="fhobby4" value="13">
+                                <label for="fhobby4">Bersepeda</label>
+            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>File KTP</td>
+                            <td><input type="file" name="fktp" required></td>
+                        </tr>
+                        <tr>
+                            <td>Kartu Mahasiswa</td>
+                            <td><input type="file" name="fkm" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" name="fsubmit"></td>
+                            <td></td>
+                        </tr>
+                </table>
+            
+            </form>
+        </div>
+    
+    </body>
+
+</html>
