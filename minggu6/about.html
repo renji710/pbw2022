@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-
+scale=1.0"> 
+    <title>Personal Website</title> 
+</head> 
+ 
+<body style="background-color: #99DDFF;"> 
+    <nav style="background-color: #3FD2C7; font-size: 150%; color: #00458B" >
+        <a href="index.html">Home</a> | 
+        <a href="raditcv.docx">Download CV</a> |
+        <aside style="float: right; font-size: 175%;">
+            <header>Contact</header>
+        </aside> 
+        <a href="contact.html">Contact</a> |
+        <a href="about.html">About me</a> 
+        <br><br/>
+    </nav> 
+ 
+    <article style="text-align: center; color: #00458B;"> 
+        <br><br/>
+        <header style="font-size: 500%">Profile</header> <br>
+        <hr width="45%"/>
+        <article> 
+            <h2 style="font-size: 200%;">Yuk yang mau kenalan lebih lanjut!</h2> 
+            <p style="font-size: 150%;"> Hi, nama panjangku Raditya Abdul Afeef</p>
+            <p style="font-size: 150%;"> Umurku 29 tahun</p>
+            <p style="font-size: 150%;"> Asal Semarang</p>
+            <p style="font-size: 150%;">Lulusan unversitas terbaik di Semarang, UDINUS</p>
+            <p style="font-size: 150%;">Saya menguasai bahasa HTML, CSS, dan Javascript. Simak video lengkap tentang saya.</p>
+            <br><br/>
+        </article>        
+    </article>
+    <div style="text-align: center; background-color: #00458B;">
+        <br><br/>
+        <video width="800" id="myVideo">
+            <source src="vid.mp4" type="video/mp4">
+        </video><br>
+        <button onclick="playVid()">Play</button>
+        <button onclick="pauseVid()">Pause</button>
+        <button onclick="durationVid()">Duration</button>
+        <button onclick="enableControls()">Enable Controls</button>
+        <button onclick="disableControls()">Disable</button>
+        <button onclick="checkControls()">Check Controls</button><br>
+        <br><br/>
+    </div>
+ 
+    <hr> 
+    <footer style="text-align: center;"> 
+        <p>Copyright &copy; 2022 Raditya.</p> 
+    </footer> 
+</body>
+<script>
+    var vid = document.getElementById("myVideo");
+    
+    function disableControls() {
+        vid.controls = false
+        vid.load();
+    }
+    
+    function enableControls() {
+        vid.controls = true
+        vid.load();
+    }
+    
+    function durationVid() {
+      alert(vid.duration);
+    }
+    
+    function playVid() {
+        vid.play();
+    }
+    
+    function pauseVid() {
+        vid.pause();
+    }
+     
+    function checkControls() { 
+      alert(vid.controls);
+    }
+    
+    </script> 
+</html>
