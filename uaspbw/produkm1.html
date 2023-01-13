@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>GGWP ID - From Gamers. For Gamers</title>
+  </head>
+  <body>
+    <style>
+      @font-face {
+        font-family: 'paladin';
+        src: url(paladins/paladins.ttf);
+      }
+      body{
+        background-color: black;
+      }
+      .navbar .nav-item.active .nav-link,
+      .navbar .nav-item:focus .nav-link,
+      .navbar .nav-item:hover .nav-link {
+          color: red;
+      }
+      .navbar .nav-item .nav-link.active{
+          color: red;
+      }
+      .navbar .navbar-nav .dropdown-item:hover,
+      .navbar .navbar-nav .dropdown-item:focus {
+          color: #eeeeee;
+          background-color: red;
+      }
+      .navbar .nav-item .nav-link{
+        color: white;
+      }
+      * {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #ff0000;
+  width: 15%;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #e10000;
+}
+
+
+.col-25 {
+  float: right;
+  width: 7%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 93%;
+  margin-top: 6px;
+}
+.col-10 {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+.w-75:hover {
+  transition: transform .2s;
+  -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3)
+}
+
+/* Clear floats after the columns */
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+  }
+}
+.card:hover {
+        transition: transform .2s;
+        -ms-transform: scale(1.05); /* IE 9 */
+        -webkit-transform: scale(1.05); /* Safari 3-8 */
+        transform: scale(1.05);
+      }
+      .btn-primary:hover {
+        opacity: 0.85;
+      }
+      </style>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 80px;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" style="font-family: paladin; font-size: 55px; font-weight: bold;"><font style="color: red;">GG</font>WP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" style="font-size: 20px;">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active" class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false"  aria-current="page" style="font-size: 20px;">
+                  Gaming Gear
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="mouse.html" style="font-size: 20px;">Mouse</a></li>
+                  <li><a class="dropdown-item" href="keyboard.html" style="font-size: 20px;">Keyboard</a></li>
+                  <li><a class="dropdown-item" href="headset.html" style="font-size: 20px;">Headset</a></li>
+                </ul>
+              </li>
+              <li class="nav-item" style="font-size: 20px;">
+                <a class="nav-link" href="accessories.html">Accessories</a>
+              </li>
+              <li class="nav-item" style="font-size: 20px;">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item" style="font-size: 20px;">
+                <a class="nav-link" href="login.html">Login</a>              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div style="width: 100%; height: 5px; background-color: red; border-width: 0;">
+    </div>
+    <div class="container my-5 py-5 px-5" style="background-color: rgb(26, 26, 26);">
+      <div class="row">
+          <div class="col-md-5">
+            <img src="images/m1.png" alt="" class="w-75">
+          </div>
+          <div class="col-md-7">
+            
+            <h1 style="color: white;">Rexus Mouse Wireless Gaming Xierra 110</h1>
+            <hr style="color: white;"></hr>
+            <h2 class="h5" style="color: white;">Terjual 3540 | Penilaian 1789 | Rating 4.7 <span class="fa fa-star checked"></span></h2>
+            <h2 class="h1" style="color: red;">Rp 90.000</h2>
+            <h2 class="h5" style="color: white;">Garansi resmi GGWP ID 100% Ori</h2>
+            <hr style="color: white;"></hr>
+            <h2 class="h5" style="color: white;">Kondisi: Baru</h2>
+            <h2 class="h5" style="color: white;">Berat Satuan: 500 g</h2>
+            <h2 class="h5" style="color: white;">Kategori: Mouse Gaming</h2>
+            <h2 class="h5" style="color: white;">Merek: Rexus</h2>
+            <h2 class="h5" style="color: white;">Garansi: 1 Tahun</h2>
+
+
+            <ul class="list-unstyled">
+              <br><br/>
+              <h2 class="h5" style="color: white;">Beli di Ecommerce pilihan</h2>
+              <li class="list-inline-item me-3"><a href="https://shopee.co.id/Rexus-Mouse-Wireless-Gaming-Xierra-110-i.33415865.465612449?sp_atk=2ca0c652-ee49-46f3-ae06-6eaee46720f1&xptdk=2ca0c652-ee49-46f3-ae06-6eaee46720f1"><img src="images/icons8-shopee-96.png" alt=""></a></li>
+              <li class="list-inline-item me-3"><a href="https://www.tokopedia.com/rexusid/rexus-keyboard-gaming-mechanical-daiva-rx-d68-d68-putih-blue-switch?extParam=whid%3D20694"><img src="images/icons8-tokopedia-96.png" alt=""></a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="container my-5 py-5 px-5" style="background-color: rgb(26, 26, 26);">
+     <h2 class="h3" style="color: white;">Deskripsi Produk</h2>
+     <hr style="color: white;"></hr>
+      <h2 class="h5" style="color: white;">Rexus Mouse Wireless Gaming Xierra 110</h2>
+      <br><br/>
+      <h2 class="h5" style="color: white;">Perfect Control in Superb Design</h2>
+      <br><br/>
+      <h2 class="h5" style="color: white;">Rexus Wireless Mouse Xierra RX110  adalah wireless mouse dengan desain yang elegan, berkelas, dan  punya beragam fitur fungsional. Mouse ini dilengkapi dengan komponen terbaik, seperti switch Huano dengan daya tahan hingga 5 juta klik, chipset Pixart PAW3205. Sumber tenaga yang berupa baterai AA memudahkan saat penggantian sehingga sangat praktis.<br> 
+        •	Mouse nirkabel yang praktis dan berdaya jangkau luas.<br>
+        •	Ambidextrous design, memungkinkan untuk digunakan untuk tangan kiri dan kanan. <br>
+        •	Tingkatan DPI 1600, dengan presisi yang tinggi.<br>
+        •	Menggunakan tombol Huano dengan durabilitas hingga 5.000.000 klik.<br>
+        •	Material terbuat dari plastik ABS berkualitas.</h2>
+      <br><br/>
+      <h2 class="h5" style="color: white;">Spesifikasi<br> 
+        Akselerasi: 10G<br>
+        Kecepatan rata-rata per frame: 4000 Fps<br>
+        Kecepatan gerak: 30 Ips<br>
+        Resolusi: 1600 DPI<br>
+        Tingkat polling: 125Hz<br>
+        Jumlah tombol: 6 tombol<br>
+        Jangkauan wireless: 10 – 15m<br>
+        Dimensi:  120 x 65 x 36mm<br>
+        Berat: N/A<br>
+        Jenis baterai: AA (1 buah)<br>
+        Kapasitas baterai: 3,5V<br>
+        Platform: Win7/ Win8/ Win 10/ Window Vista/ Window XP<br>
+        Fitur Unggulan<br>
+      </h2>
+      <br><br/>
+      <h2 class="h5" style="color: white;">Baterai AA yang Praktis<br>
+        Mouse ini menggunakan sumber daya berupa satu buah baterai tipe AA 3,5V yang praktis dan mudah diperoleh. Baterai AA juga mudah diganti sehingga memungkinkan mouse ini dibawa ke manapun.<br>  
+        Tombol Huano dengan Daya Tahan 5 Juta Klik<br>
+        Rexus Xierra RX110 menggunakan tombol yang biasa digunakan oleh beberapa tipe mouse gaming. Tombol Huano yang digunakan mouse ini mempunyai durabilitas hingga 5 juta klik. 
+        Chipset PIXART PAW3205<br>
+        Mouse ini dilengkapi dengan chipset PIXART PAW3205 yang efektif dalam penggunaan energi dan memiliki tingkat presisi yang tinggi.</h2>
+
+
+    </div>
+    <div class="container my-5 py-5 px-5" style="background-color: rgb(26, 26, 26);">
+      <h2 class="h3" style="color: white;">Produk Lainnya</h2>
+      <hr style="color: white;"></hr>
+
+      <div class="row" align="center">
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem; background-color: rgb(0, 0, 0);">
+              <img src="images/kb2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color: white;">Rexus Keyboard Gaming DAIVA D68</h5>
+                <a href="produk2.html" class="btn btn-primary"  style="background-color: red; border: 0;">500.000</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem; background-color: rgb(0, 0, 0);">
+                <img src="images/kb2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color: white;">Rexus Keyboard Gaming DAIVA D68</h5>
+                <a href="produk2.html" class="btn btn-primary"  style="background-color: red; border: 0;">500.000</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem; background-color: rgb(0, 0, 0);">
+                <img src="images/kb2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color: white;">Rexus Keyboard Gaming DAIVA D68</h5>
+                <a href="produk2.html" class="btn btn-primary"  style="background-color: red; border: 0;">500.000</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  <div class="container my-5 py-5 px-5" style="background-color: rgb(26, 26, 26);">
+    <h2 class="h3" style="color: white;">Review</h2>
+    <hr style="color: white;"></hr>
+    <form action="/action_page.php">
+      <div class="row">
+        <div>
+          <a class="list-inline-item me-3"><img src="images/user (2).png" alt=""></a>
+          <label for="subject" style="color: white; font-size: larger;">User_123456789</label>
+        </div>
+        <div class="col-25">
+        </div>
+        <div  class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something..." style="height:150px"></textarea>
+        </div>
+        <div class="col-10">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+      
+    </form>
+  </div>
+  <footer class="bg-dark text-white mt-5">
+    <br><br/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <address class="text-end">
+                    CV. GAMER INDONESIA JAYA <br>
+                    Jalan Kesehatan II no. 19 <br> 
+                    Telp : 08152531471
+                </address>
+            </div>
+            <div class="col-md-5">
+                <ul class="list-unstyled">
+                  <li class="list-inline-item me-3"><a href="#"><img src="images/icon-fb.png" alt=""></a></li>
+                  <li class="list-inline-item me-3"><a href="#"><img src="images/icon-instagram.png" alt=""></a></li>
+                  <li class="list-inline-item me-3"><a href="#"><img src="images/icon-twitter.png" alt=""></a></li>
+                  <li class="list-inline-item me-3"><a href="#"><img src="images/icon-youtube.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center py-3">&copy;GGWP ID 2022. All Rights Reserved</div>
+  </footer>
+
+</body>
